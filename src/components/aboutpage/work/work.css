@@ -1,0 +1,144 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.work-tittle {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.work-tittle h3 {
+  font-size: 24px;
+  font-family: var(--font-family);
+  line-height: 50px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.work-tittle h2 {
+  font-size: 36px;
+  font-family: var(--font-family);
+  line-height: 50px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.work-item-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 4px 124px rgb(0 0 0 / 10%);
+  width: 35%;
+  height: auto;
+  margin: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.item-card-image {
+  width: 100%;
+  height: auto;
+}
+
+.item-card-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-card-tittle {
+  width: 100%;
+  height: 200px;
+}
+
+.item-card-tittle h2 {
+  font-size: 20px;
+  font-family: var(--font-family);
+  line-height: 40px;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0 10px;
+}
+
+.work-item-card:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.button-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 300px;
+  padding: 20px 0;
+}
+.button-item {
+  background: black;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  box-sizing: border-box;
+  padding: 8px 25px;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.button-item:hover {
+  background: #1090cb;
+}
+
+.button-item:active,
+.button-item:focus {
+  background: #1090cb;
+}
+
+.button-info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: black;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.link-info a {
+  color: white;
+  padding: 15px;
+}
+
+.link-info:hover {
+  background: #1090cb;
+}
+
+@media only screen and (max-width: 768px) {
+  .work-item {
+    flex-direction: column;
+  }
+  .work-item-card {
+    width: auto;
+    margin: 10px;
+  }
+}

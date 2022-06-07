@@ -1,0 +1,118 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  z-index: 99;
+  border-bottom: 0.7px solid #c4c4c4;
+}
+
+.navbar.bgdark {
+  background: black;
+}
+
+.bgdark .navbar-content-item a {
+  color: var(--white);
+}
+.bgdark a.active {
+  color: var(--primary-color);
+}
+
+.bgdark a:hover {
+  color: var(--primary-color);
+}
+
+.bgdark .icon {
+  color: white;
+}
+.navbar .navbar-logo {
+  margin: 0 20px;
+}
+
+.navbar .navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-content .navbar-content-list {
+  display: flex;
+  padding: 0 10px;
+  list-style: none;
+  margin: 0 15px;
+  transition: all 0.5 ease;
+}
+
+.navbar-content-list .navbar-content-item {
+  margin: 0 15px;
+  padding: 20px;
+}
+
+.navbar-content-item a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+a.active {
+  color: var(--primary-color);
+}
+
+.icon {
+  display: none;
+  align-items: center;
+  font-size: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+.navbar-content-list-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .navbar-content {
+    display: none;
+  }
+  .navbar-content .navbar-content-list {
+    position: absolute;
+    right: 100%;
+  }
+  .navbar-content-list.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 255, 235, 0.8) 0%,
+      rgba(3, 255, 130, 1) 59%
+    );
+
+    transition: all 0.5s ease;
+  }
+  .navbar-content-list.mobile-nav .navbar-content-item {
+    padding: 10px;
+    margin: 10px;
+  }
+  .navbar-content-list.mobile-nav .navbar-content-item:hover {
+    background: var(--color-bg);
+  }
+  .icon {
+    display: flex;
+  }
+}

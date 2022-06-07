@@ -1,0 +1,121 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #e8f4fa;
+  padding: 5rem 0;
+  position: relative;
+}
+
+.search-tittle {
+  width: 516px;
+  height: 91px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3rem 0;
+}
+.search-tittle h2 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 51px;
+}
+
+.search-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-item input {
+  width: 532px;
+  height: 67px;
+  padding: 0 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.search-item input[type="text"] {
+  font-size: 16px;
+  line-height: 27px;
+  font-family: var(--font-family);
+  margin-left: 15px;
+  color: black;
+  transition: 0.3s;
+}
+
+.search-item input[type="text"]:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.search-item input::placeholder {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-size: 16px;
+  color: #787878;
+  line-height: 27px;
+}
+
+button.btn-search {
+  width: 173px;
+  height: 67px;
+  background: var(--black);
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+
+  text-align: center;
+
+  color: #fff4f4;
+  margin: 0 20px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.pai {
+  position: absolute;
+  top: 70px;
+  right: 385px;
+}
+.star {
+  position: absolute;
+  top: -46px;
+  left: 215px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .pai {
+    right: 100px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .search-tittle {
+    width: 100%;
+  }
+  .search-tittle h2 {
+    font-size: 24px;
+  }
+  .search-item input {
+    width: 100%;
+  }
+  .btn-search a {
+    font-size: 14px;
+  }
+  .star {
+    left: 50px;
+  }
+  .pai {
+    right: 30px;
+  }
+}

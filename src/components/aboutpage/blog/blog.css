@@ -1,0 +1,43 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.blog-tittle {
+  width: 60%;
+  margin: 2rem 4rem;
+}
+
+.blog-tittle h2 {
+  font-size: 45px;
+  font-family: var(--font-family);
+  color: #1090cb;
+  line-height: 72px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.blog-paragraph {
+  width: 75%;
+  margin: 0 4rem 3rem 4rem;
+}
+
+.blog-paragraph p {
+  font-size: 20px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  color: #585858;
+}
+
+@media only screen and (max-width: 580px) {
+  .blog-tittle h2 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .blog-paragraph {
+    font-size: 18px;
+  }
+}

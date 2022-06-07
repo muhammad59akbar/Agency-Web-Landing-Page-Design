@@ -1,0 +1,85 @@
+.describe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+.describe-content {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 15px;
+}
+
+.describe-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 83px;
+  height: 83px;
+  border-radius: 20px;
+  background: #efeaff;
+}
+
+.describe-image1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 83px;
+  height: 83px;
+  border-radius: 20px;
+  background: #ecffda;
+}
+.describe-image2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 83px;
+  height: 83px;
+  border-radius: 20px;
+  background: #dae6ff;
+}
+.describe-image3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 83px;
+  height: 83px;
+  border-radius: 20px;
+  background: #ffe5da;
+}
+
+.describe-image img {
+  width: 41px;
+  height: 41px;
+}
+
+.tittle-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .describe h3 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .describe h3 {
+    font-size: 14px;
+  }
+  .describe p {
+    font-size: 15px;
+  }
+  .describe-content {
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .describe {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,194 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e8f4fa;
+  padding: 20px 0;
+}
+
+.Form h2 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 57px;
+}
+.Form p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 25px;
+  color: #777777;
+}
+
+.Form label {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.3px;
+  color: #4f4f4f;
+  margin: 5px;
+}
+
+.Form input[type="text"] {
+  font-size: 16px;
+  line-height: 27px;
+  font-family: var(--font-family);
+  color: black;
+  transition: 0.3s;
+  background: white;
+}
+
+.Form input[type="text"]:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+  background: white;
+}
+
+.form-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Form-Row {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.Form-Row input {
+  width: 322px;
+  height: 56px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 0 20px;
+  background: white;
+}
+
+.Form-FirstName {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.Form-LastName {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.Form-Email {
+  display: flex;
+  flex-direction: column;
+}
+.Form-Email input {
+  width: 671px;
+  height: 56px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0 20px;
+  background: white;
+}
+
+.Form-Message {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.Form-Message textarea {
+  width: 671px;
+  height: 232px;
+  resize: none;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 27px;
+  font-family: var(--font-family);
+  color: black;
+  transition: 0.3s;
+  padding: 20px;
+}
+
+.Form-Message textarea:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.button-form-item {
+  width: 671px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-form-item .button-form {
+  cursor: pointer;
+  width: 193px;
+  height: 51px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #1090cb;
+  color: white;
+}
+
+@media only screen and (max-width: 540px) {
+  .Form-Row input {
+    width: 215px;
+    height: 50px;
+  }
+  .Form-Email input {
+    width: 445px;
+    height: 50px;
+  }
+  .Form-Message textarea {
+    width: 445px;
+  }
+  .button-form-item {
+    width: 445px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .Form-Row input {
+    width: 165px;
+    height: 45px;
+  }
+  .Form-Email input {
+    width: 355px;
+    height: 45px;
+  }
+  .Form-Message textarea {
+    width: 355px;
+  }
+  .button-form-item {
+    width: 355px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .Form-Row input {
+    width: 120px;
+    height: 30px;
+  }
+  .Form-Email input {
+    width: 265px;
+    height: 45px;
+  }
+  .Form-Message textarea {
+    width: 265px;
+  }
+  .button-form-item {
+    width: 265px;
+  }
+}
